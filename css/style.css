@@ -1,0 +1,530 @@
+/* Reset styles */
+
+
+/* eye icon*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic styles */
+
+body {
+    font-family: "Audiowide", sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo h2 {
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: left;
+}
+
+.download-button {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0% 20%;
+}
+
+.download-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.download-button a:hover {
+    background-color: #000;
+}
+
+
+/*slider*/
+
+.section-content {
+    display: none;
+}
+
+.section-content.show {
+    display: block;
+}
+
+.card {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+    color: #555;
+}
+
+.card li {
+    margin: 0;
+    color: #555;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#certificates {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.slider-container {
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slider-navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-navigation button {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.slider-navigation button:hover {
+    background-color: #000;
+}
+
+
+/* Blog code from here */
+
+
+/*         
+        #blog {
+            text-align: center;
+            margin-bottom: 20px;
+            height: 100%;
+            /* Ensure blog section takes full height 
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog-list {
+        margin-top: 10px;
+        color: #6b9dd2;
+    }
+    button {
+        margin: 10px;
+        width: 15%;
+        padding: 8px 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    */
+
+
+/*     
+    button:hover {
+        background-color: #000;
+    }
+    
+    .blog-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px auto;
+        max-width: 600px;
+        color: #333;
+        /* Change the text color to #333 or any other contrasting color 
+}
+.blog-item h3 {
+    margin-top: 0;
+}
+.delete-button {
+    color: #333;
+    cursor: pointer;
+    float: right;
+}
+.delete-button:hover {
+    text-decoration: underline;
+    background-color: #000;
+}
+*/
+
+
+/* project section */
+
+
+/* Card styles */
+
+
+/* Card styles */
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-card {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    /* Adjust the width as needed */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    /* Apply the hover transform */
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0;
+    /* Rounded top corners */
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Full-Screen Modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-image {
+    width: 100%;
+    height: 200px;
+    /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0;
+    /* Rounded top corners */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content a {
+    color: #333;
+    text-underline-offset: none;
+}
+
+.modal-content a:hover {
+    color: #e06666;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    /* Center the content in the footer */
+}
+
+
+/* Footer text styles */
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    /* Optional: remove left padding to align the list items with the surrounding content */
+}
+
+footer p {
+    margin: 0;
+    /* Remove any default margins */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img:hover {
+    background-color: #333;
+}
+
+.modal-dialog {
+    margin-top: 50px;
+    /* Adjust the value as needed to change the vertical position */
+}
+
+form div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+form div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form div input[type="text"],
+form div textarea {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+form div input[type="email"],
+form div textarea {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* margin: 10px 20px 30px 40px; */
+    box-sizing: border-box;
+}
+
+form div input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form div input[type="submit"]:hover {
+    background-color: #6b9dd2;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto auto;
+    padding: 20px;
+    margin-bottom: 3%;
+    /* background-color: #007bff; */
+}
+
+.text {
+    flex-basis: 50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.imag {
+    flex-basis: 50%;
+    /* background-image: url(/img/azad.jpeg); */
+    /* background-size: cover; */
+    background-position: center;
+    height: 420px;
+}
+
+
+/* code for the form */
+
+form {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+    display: flexbox;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CSS code for the submit button */
+
+button[type="submit"] {
+    background-color: #333;
+    /* Green background color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Add some padding to the button */
+    border: none;
+    /* Remove default border */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Add a pointer cursor on hover */
+    font-size: 16px;
+    /* Set font size */
+    margin-top: 10px;
+}
+
+
+/* CSS code for hover effect */
+
+button[type="submit"]:hover {
+    background-color: #000000;
+    /* Darker green background color on hover */
+}
